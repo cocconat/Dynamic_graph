@@ -8,7 +8,7 @@ Then a dynamic is applied on the graph trough the method move(plane) which evalu
 
 The class Grapher manage both the np.array and the nx.Graph.
 it s possible to generate a normalized random 3d-matrix
-'''    dim is a 3-tuple (i,h,j) '''
+dim is a 3-tuple (i,h,j)
 
 #class Grapher(object):
     __Matrix=None
@@ -19,11 +19,13 @@ it s possible to generate a normalized random 3d-matrix
         self.__Matrix= np.zeros(shape=dim)
         self.__Graph= nx.DiGraph()
         self.__Dim = dim
+    #    dim is a 3-tuple (i,h,j)
+
         self.__Position=0
     def casualfill(dim) 
-    #-- generate a graph from a random matrix
+    # generate a graph from a random matrix
     def setmatrix(MAT) 
-    #-- generate a graph from a np.array of dimension 3 (dim is MAT.shape)
+    # generate a graph from a np.array of dimension 3 (dim is MAT.shape)
     def move (plane) 
-    #-- extract a node among neighbors() then change __Position to the new node, the variable "plane" set on which layer of the 3d matrix your acting the dynamic.
+    # extract a node among neighbors() then change self.__Position to the new node, the variable "plane" set on which layer of the 3d matrix the weight is choosed.
 
