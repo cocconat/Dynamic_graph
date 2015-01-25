@@ -89,10 +89,11 @@ class Grapher(object):
     def move(self,plane):
         self.__Position=dynamic(self.__Graph,self.__Position, plane)
         return self.__Position
-        
-#main  
-dim=(2,5,10)
+dim=(2,10,10)
 pos=3
 
 G=Grapher()
 G.casualfill(dim)
+G.graph_generator()
+
+#plotter()
