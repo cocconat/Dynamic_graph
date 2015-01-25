@@ -21,10 +21,13 @@ class Grapher(object):
         self.__Dim = dim
         self.__Position=0
 
-dim is a 3-tuple (i,h,j) 
+    dim is a 3-tuple (i,h,j) 
 
-The methods:
-casualfill(dim) -- generate a graph from a random matrix
-setmatrix(MAT) -- generate a graph from a np.array of dimension 3 (dim is MAT.shape)
-move (plane) -- extract a node among neighbors() then change __Position to the new node, the variable "plane" set                 on which layer of the 3d matrix your acting the dynamic.
+    The methods:
+def casualfill(dim) 
+    #-- generate a graph from a random matrix
+def setmatrix(MAT) 
+    #-- generate a graph from a np.array of dimension 3 (dim is MAT.shape)
+def move (plane) 
+    #-- extract a node among neighbors() then change __Position to the new node, the variable "plane" set on which layer of the 3d matrix your acting the dynamic.
 
