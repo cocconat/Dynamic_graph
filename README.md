@@ -8,6 +8,7 @@ Then a dynamic is applied on the graph trough the method move(plane) which evalu
 
 The class Grapher manage both the np.array and the nx.Graph.
 it s possible to generate a normalized random 3d-matrix
+'''    dim is a 3-tuple (i,h,j) '''
 
 #class Grapher(object):
     __Matrix=None
@@ -15,15 +16,10 @@ it s possible to generate a normalized random 3d-matrix
     __Dim=None
     __Position=0
     def __init__(self):
-'''       Constructor'''
         self.__Matrix= np.zeros(shape=dim)
         self.__Graph= nx.DiGraph()
         self.__Dim = dim
         self.__Position=0
-
-'''    dim is a 3-tuple (i,h,j) '''
-
-'''    The methods: '''
     def casualfill(dim) 
     #-- generate a graph from a random matrix
     def setmatrix(MAT) 
